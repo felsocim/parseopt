@@ -56,15 +56,15 @@ bool option::operator==(const std::string &other) {
 }
 
 bool option::operator!=(const option &other) {
-  return !this->operator==(other);
+  return !this->operator == other;
 }
 
 bool option::operator!=(const char &other) {
-  return !this->operator==(other);
+  return !this->operator == other;
 }
 
 bool option::operator!=(const std::string &other) {
-  return !this->operator==(other);
+  return !this->operator == other;
 }
 
 option parseopt(const int argc, const char * const * argv, std::vector<option> options) {
@@ -98,7 +98,9 @@ option parseopt(const int argc, const char * const * argv, std::vector<option> o
 
   optindex++;
 
-  if(!found) return option('?');
+  if(!found) {
+    return option('?');
+  }
 
   int shift = optindex;
 
