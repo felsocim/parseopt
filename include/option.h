@@ -32,6 +32,9 @@ class option {
     bool operator!=(const std::string &other);
 };
 
+const static option optend = option(-1),
+  optunknown = option('?');
+
 option parseopt(const int argc, const char * const * argv, std::vector<option> options);
 
 #endif // __PARSEOPT_H
