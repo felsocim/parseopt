@@ -1,4 +1,4 @@
-#include "../option.h"
+#include "option.h"
 
 std::vector<std::string> optparams;
 int optindex = 1;
