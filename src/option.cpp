@@ -78,7 +78,7 @@ option parseopt(const int argc, const char * const * argv, std::vector<option> o
 
   if(optindex >= argc) {
     optindex = 1;
-    return option(0);
+    return option(-1);
   }
 
   std::string long_argument(argv[optindex]);
