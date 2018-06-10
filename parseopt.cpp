@@ -1,4 +1,4 @@
-#include "option.h"
+#include "parseopt.h"
 
 std::vector<std::string> optparams;
 int optindex = 1;
@@ -56,15 +56,15 @@ bool option::operator==(const std::string &other) {
 }
 
 bool option::operator!=(const option &other) {
-  return !this->operator == other;
+  return !this->operator == (other);
 }
 
 bool option::operator!=(const char &other) {
-  return !this->operator == other;
+  return !this->operator == (other);
 }
 
 bool option::operator!=(const std::string &other) {
-  return !this->operator == other;
+  return !this->operator == (other);
 }
 
 option parseopt(const int argc, const char * const * argv, std::vector<option> options) {
