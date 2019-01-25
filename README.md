@@ -32,7 +32,7 @@ After extracting the source files, run `make` and then `sudo make install` to in
 
 **CAUTION:** The installation script works only on Linux distributions! On other operating systems you will have to install the library manually.
 
-**IMPORTANT:** Whenever you use the library in your project, do not forget to add **-lparseopt** to your compilation command in order to link the library properly with your project!
+**IMPORTANT:** Whenever you use the library in your project, do not forget to add `#include <parseopt.h>` to concerned source files and **-lparseopt** to your compilation command in order to link the library properly with your project!
 
 *To uninstall the library, run `sudo make uninstall`.*
 
