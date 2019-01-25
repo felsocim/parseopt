@@ -1,10 +1,10 @@
 # parseopt
 
-Object-oriented command-line options parsing library for C++
+Object-oriented extended command-line options parsing library for C++
 
 ## About
 
-This library provides an object-oriented C++ version of the well-known C 'getopt' function allowing to parse command-line options of console applications. The motivation to create this library was to create a full-C++ 'getopt' alternative in order to be able to walk-around the low-level C types and memory allocations and facilitate the syntax which is behind options parsing.
+This library provides an object-oriented C++ version of the well-known C *getopt* function allowing to parse command-line options of console applications. The motivation to create this library was to create a full-C++ *getopt* alternative in order to be able to walk-around the low-level C types and memory allocations and facilitate the syntax which is behind options parsing.
 
 ## Features
 
