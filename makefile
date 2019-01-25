@@ -4,7 +4,7 @@ RM = /bin/rm -f
 CP = /bin/cp -f
 CHMOD = /bin/chmod
 MKDIR = /bin/mkdir -p
-PRINT = echo
+PRINT = @echo
 
 all: parseopt
 	$(CC) -shared parseopt.o -o libparseopt.so
