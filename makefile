@@ -31,6 +31,9 @@ uninstall:
 
 	$(PRINT) "Updating library cache..."
 	ldconfig
+	
+example: example.cpp
+	$(CC) example.cpp -lparseopt
 
 clean:
 	$(RM) *.o *.so
