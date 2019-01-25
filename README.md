@@ -26,6 +26,12 @@ The only difference is, that you can't you a switch construct inside the while l
 
 See the [example file](example.cpp).
 
+## Installation instructions
+
+After extracting the source files, run `make` and then `sudo make install` to install the library on your system.
+
+**IMPORTANT:** Whenever you use the library in your project, do not forget to add **-lparseopt** to your compilation command in order to link the library properly with your project!
+
 ## Author
 
 [Marek Felsoci](mailto:marek.felsoci@gmail.com) - Master's degree student at the [University of Strasbourg](http://www.unistra.fr)
