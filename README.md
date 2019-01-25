@@ -28,7 +28,9 @@ See the [example file](example.cpp).
 
 ## Installation instructions
 
-After extracting the source files, run `make` and then `sudo make install` to install the library on your system.
+After extracting the source files, run `make` and then `sudo make install` to install the library on your Linux system.
+
+**CAUTION:** The installation script works only on Linux distributions! On other operating systems you will have to install the library manually.
 
 **IMPORTANT:** Whenever you use the library in your project, do not forget to add **-lparseopt** to your compilation command in order to link the library properly with your project!
 
